@@ -1,0 +1,169 @@
+/* index.css (or app.css, but index.css is preferred for global styles) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Softer background color */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: #a020f0; /* Purple navbar */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.6rem; /* Larger logo */
+    transition: transform 0.2s ease, color 0.3s ease; /* Transition for color too */
+}
+
+nav .logo:hover {
+    transform: scale(1.08);
+    color: #f0f8f9; /* Lighter color on hover */
+}
+
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+    padding: 0.8rem 1.4rem; /* Adjusted padding */
+    border-radius: 10px; /* More rounded corners */
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #b339dd; /* Slightly different hover color */
+    transform: translateY(-3px); /* More pronounced move up */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* More visible shadow */
+}
+
+nav a.active {
+    background-color: #ce93d8; /* Lighter purple for active */
+    color: #333; /* Darker text for active */
+    font-weight: 500;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px; /* Slightly wider container */
+    margin: 20px auto;
+    flex: 1;
+}
+
+form {
+    margin-bottom: 2rem;
+    padding: 25px; /* Increased padding */
+    background-color: white;
+    border-radius: 15px; /* Even more rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: transform 0.2s ease;
+}
+
+form:hover {
+    transform: translateY(-8px); /* More pronounced move up */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* More margin */
+    font-weight: 500;
+    color: #555; /* Darker label color */
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 1.2rem; /* More margin */
+    padding: 1rem; /* More padding */
+    border: 1px solid #c0c0c0; /* Slightly darker border */
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition for box-shadow */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #a020f0; /* Purple on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(160, 32, 240, 0.3); /* Purple shadow on focus */
+}
+
+button {
+    background-color: #a020f0; /* Purple button */
+    color: white;
+    padding: 1rem 1.8rem; /* More padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Add a shadow to the button */
+}
+
+button:hover {
+    background-color: #9317e8; /* Darker purple on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More visible shadow on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 14px; /* More padding */
+    border: none;
+    text-align: left;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #444; /* Darker header text color */
+    padding: 16px; /* Added padding to the header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Lighter even row color */
+}
+
+tr:hover { /* Hover effect on table rows */
+    background-color: #e0e0e0; /* Subtle hover color */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.2rem; /* More padding */
+    margin-top: 20px;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
