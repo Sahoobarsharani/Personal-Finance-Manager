@@ -27,7 +27,7 @@ Database: MongoDB
 Authentication: JWT-based authentication
 
 Styling: Tailwind CSS
-
+## website 
 ![finance](https://github.com/user-attachments/assets/0eee6579-58f1-4146-81ec-af994c622144)
 ![finance2](https://github.com/user-attachments/assets/9184293c-1d59-4aee-af2f-f27e37ed9a88)
 ![finance3](https://github.com/user-attachments/assets/e12291a5-4bf4-49d2-8670-8f5ffa3cb312)
